@@ -75,10 +75,10 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link  active" href="../data_entry/edit_table.html">
+                <a class="nav-link  " href="../data_entry/edit_table.html">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-pen-fill" viewBox="0 0 16 16" style="color: #f0f0f0">
+                             class="bi bi-pen-fill" viewBox="0 0 16 16">
                             <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001z"/>
                         </svg>
                     </div>
@@ -86,12 +86,12 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  " href="../data_entry/all_asset.html">
+                <a class="nav-link  active" href="../data_entry/all_asset.html">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-archive-fill" viewBox="0 0 16 16">
+                             class="bi bi-archive-fill" viewBox="0 0 16 16" style="color: #f0f0f0">
                             <path d="M12.643 15C13.979 15 15 13.845 15 12.5V5H1v7.5C1 13.845 2.021 15 3.357 15h9.286zM5.5 7h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1zM.8 1a.8.8 0 0 0-.8.8V3a.8.8 0 0 0 .8.8h14.4A.8.8 0 0 0 16 3V1.8a.8.8 0 0 0-.8-.8H.8z"/>
-                        </svg>
+                        </svg >
                     </div>
                     <span class="nav-link-text ms-1">All Asset Entries</span>
                 </a>
@@ -121,9 +121,9 @@
                 <ol class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5">
                     <li class="breadcrumb-item text-sm"><a class="opacity-5 text-dark" href="javascript:;">Pages</a>
                     </li>
-                    <li class="breadcrumb-item text-sm text-dark active" aria-current="page">Edit Asset</li>
+                    <li class="breadcrumb-item text-sm text-dark active" aria-current="page">View Asset</li>
                 </ol>
-                <h6 class="font-weight-bolder mb-0">Edit Asset</h6>
+                <h6 class="font-weight-bolder mb-0">View Asset</h6>
             </nav>
         </div>
     </nav>
@@ -131,7 +131,9 @@
     <div class="container-fluid py-4">
         <form>
             <div style="float: right">
-                <button class="btn btn-outline-primary">Save Edited Asset</button>
+                <a href="../data_entry/all_asset.html" class="btn btn-outline-primary">
+                        <i class="bi bi-x-lg"> Close</i>
+                </a>
             </div>
             <div class="row">
                 <div class="col-md-7 mt-4">
@@ -143,7 +145,7 @@
                             <div class="row form-group">
                                 <div class="col-5">
                                     <label class="mb-2">Asset Type</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -153,13 +155,13 @@
 
                                 <div class="col-7">
                                     <label class="mb-2">Asset Description</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea class="form-control" readonly></textarea>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Major Category</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -168,7 +170,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Minor Category</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -179,7 +181,7 @@
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Location Code</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -188,57 +190,57 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Date Place in Service</label>
-                                    <input type="date" class="form-control">
+                                    <input type="date" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Building</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Room</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Tag Number</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Serial Number</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Engine Number</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Manufacturer Name</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Model Number</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Model Year</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Registration Number</label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Usage Type</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -249,7 +251,7 @@
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Current Status</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -258,7 +260,7 @@
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Condition</label>
-                                    <select class="form-select" aria-label="Default select example">
+                                    <select class="form-select" aria-label="Default select example" disabled>
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
@@ -285,27 +287,27 @@
                             <div class="row form-group">
                                 <div class="col-12">
                                     <label class="mb-2">Full Name</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Staff ID</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Position</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="row form-group">
                                 <div class="col-6">
                                     <label class="mb-2">Department</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                                 <div class="col-6">
                                     <label class="mb-2">Section/Unit</label>
-                                    <input type="text" class="form-control" >
+                                    <input type="text" class="form-control" readonly>
                                 </div>
                             </div>
 

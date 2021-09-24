@@ -115,7 +115,7 @@ $ls = "SELECT * FROM `asset_list` WHERE ASSET_TYPE = 'Laptop' && DEPARTMENT LIKE
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  " href="#">
+                <a class="nav-link  " href="../data_entry/new_entry.html">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-plus-lg" viewBox="0 0 16 16">
@@ -127,7 +127,7 @@ $ls = "SELECT * FROM `asset_list` WHERE ASSET_TYPE = 'Laptop' && DEPARTMENT LIKE
             </li>
 
             <li class="nav-item">
-                <a class="nav-link  " href="#">
+                <a class="nav-link  " href="../data_entry/edit_table.html">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-pen-fill" viewBox="0 0 16 16">
@@ -138,7 +138,7 @@ $ls = "SELECT * FROM `asset_list` WHERE ASSET_TYPE = 'Laptop' && DEPARTMENT LIKE
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  " href="#">
+                <a class="nav-link  " href="../data_entry/all_asset.html">
                     <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                              class="bi bi-archive-fill" viewBox="0 0 16 16">
